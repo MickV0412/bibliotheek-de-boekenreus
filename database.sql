@@ -32,3 +32,27 @@ CREATE TABLE users(
     reset_token VARCHAR(255),
     reset_expires DATETIME
 );
+
+CREATE TABLE reservations(
+    id INT AUTO_INCREMENT PRIMARY  KEY,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    reservation_date DATETIME,
+    return_date DATE,
+    status VARCHAR(20) DEFAULT 'reserved', 
+    lecture BOOLEAN DEFAULT 0,
+    book_club BOOLEAN DEFAULT 0,
+    audiobook BOOLEAN DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (book_id) REFERENCES books(id)
+);
+
+CREATE TABLE reviews(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    comment TEXT NOT NULL,
+    approved BOOLEAN DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (book_id) REFERENCES books(id)    
+);
