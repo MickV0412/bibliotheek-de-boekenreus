@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: #F7F5F0;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+.site-header {
+    background-color: #1F3A5F;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #F7F5F0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #F7F5F0;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.logo:hover {
+    color: #C9A227;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: 60vh;
+}
+
+.search-form {
+    display: flex;
+    gap: 5px;
+}
+
+.search-form input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 220px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #C9A227;
+    color: #1F3A5F;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #F7F5F0;
+}
+
+.site-footer {
+    background-color: #1F3A5F;
+    color: #F7F5F0;
+    padding: 30px 20px 15px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section h3 {
+    color: #C9A227;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #F7F5F0;
+}
+
+.footer-section a:hover {
+    color: #C9A227;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
