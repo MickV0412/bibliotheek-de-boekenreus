@@ -6,6 +6,8 @@
     <title>De Boekenreus</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+<body>
+
 <header class="site-header">
     <a href="/php/paginas/index.php" class="logo">De Boekenreus</a>
 
@@ -27,6 +29,4 @@
     </form>
 </header>
 
-<main></main>
-<body>
-    
+<main>
